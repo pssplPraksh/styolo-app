@@ -14,7 +14,7 @@ st.set_page_config(
 )
 
 # Model initialization pssplpraksh/styolo-app/main/app.py
-model_path = r'pssplpraksh/styolo-app/main/final_number_plate_model.pt'
+model_path = r'https://github.com/pssplpraksh/styolo-app/main/final_number_plate_model.pt'
 model = YOLO(model_path)
 
 # Sidebar for model configuration
