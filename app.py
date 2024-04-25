@@ -48,7 +48,7 @@ if uploaded_file:
                 break
 
             # Perform object detection
-            vehicle_boxes = vehicle_detector.predict(frame, confidence_threshold1)
+            vehicle_boxes = vehicle_detector.predict(frame, conf=confidence_threshold1)
             #res = model.predict(source=frame, conf=confidence_threshold)
             #boxes = res[0].boxes
 
@@ -71,7 +71,7 @@ if uploaded_file:
                 if class_id == 'car':  # Assuming 'car' is the class for vehicles
                     vehicle_image = frame[y:y+h, x:x+w]
                     # Detect number plate
-                    plate_boxes = number_plate_detector.predict(vehicle_image , confidence_threshold2)
+                    plate_boxes = number_plate_detector.predict(vehicle_image , conf=confidence_threshold2)
                     
                     for plate_box in plate_boxes[0].boxes:
                         # Draw bounding box around number plate
