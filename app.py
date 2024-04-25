@@ -93,6 +93,3 @@ if uploaded_file:
 
     # Remove the temporary video file
     os.unlink(video_path)
-
-if __name__ == '__main__':
-    st.set_option('server.enableCORS', True)
