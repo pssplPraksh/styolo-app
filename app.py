@@ -14,7 +14,7 @@ st.set_page_config(
 )
 
 # Model initialization
-model_path = r'C:\Users\Surojit\Downloads\final_number_plate_model.pt'
+model_path = r'https://github.com/pssplPraksh/styolo-app/blob/main/final_number_plate_model.pt'
 model = YOLO(model_path)
 
 # Sidebar for model configuration
